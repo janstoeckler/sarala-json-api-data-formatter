@@ -8,7 +8,7 @@ import {
     isUndefined,
     isArray,
     map
-} from 'lodash'
+} from 'lodash-es'
 
 export default class Formatter {
     constructor () {
