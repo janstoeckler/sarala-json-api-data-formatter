@@ -114,7 +114,7 @@ export default class Formatter {
     }
 
     resolveRelation (data) {
-        return this.deserializeOne(find(this.data.included, data))
+        return this.deserializeOne(find(this.data.included, { id: data.id, type: data.type }))
     }
 
     resolveRelationCollection (relations) {
